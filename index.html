@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GLOWIETY · Nirsap Biotech — Luxury Botanical Skincare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo"><img src="assets/logo.png" alt="Glowiety"></div>
+    <div class="loader-brand-text">
+      <span class="lb-sub">NIRSAP BIOTECH</span>
+    </div>
+    <div class="loader-ring"></div>
+  </div>
+</div>
+
+<!-- Particles -->
+<canvas id="particles"></canvas>
+
+<!-- Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">
+      <div class="brand-mark"><img src="assets/logo.png" alt="Glowiety"></div>
+      <div class="brand-text">
+        <span class="brand-sub">NIRSAP BIOTECH</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#science">Science</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#ritual">Ritual</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#collection" class="nav-cta">Shop Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg-grad"></div>
+  <div class="hero-aurora"></div>
+
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span class="line"></span>
+        <span>BOTANICAL LUXURY · NIRSAP BIOTECH</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="ht-line"><span>Reveal</span> <span>Your</span></span>
+        <span class="ht-line"><em>Natural</em></span>
+        <span class="ht-line"><span>Radiance</span></span>
+      </h1>
+      <p class="hero-sub">A botanical ritual crafted with biotech precision — gentle on skin, powerful in results. Reveal a softer, brighter, more luminous you.</p>
+      <div class="hero-ctas">
+        <a href="#collection" class="btn-primary"><span>Shop The Ritual</span><i></i></a>
+        <a href="#science" class="btn-ghost">The Science</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>100%</b><span>Sulphate · Paraben Free</span></div>
+        <div><b>₹349</b><span>Each · Free Shipping*</span></div>
+        <div><b>4.9★</b><span>Loved By Our Glow Tribe</span></div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="collage">
+        <div class="c-card c1">
+          <img src="assets/m-facewash.png" alt="Glowiety Face Wash in use">
+          <div class="c-tag">FOAMING FACE WASH</div>
+        </div>
+        <div class="c-card c2">
+          <img src="assets/m-shampoo.png" alt="Glowiety Rosemary Shampoo in use">
+          <div class="c-tag">ROSEMARY SHAMPOO</div>
+        </div>
+        <div class="c-blob b1"></div>
+        <div class="c-blob b2"></div>
+        <div class="c-leaf l1">✿</div>
+        <div class="c-leaf l2">✦</div>
+        <div class="c-leaf l3">❀</div>
+        <div class="c-badge">
+          <div class="cb-inner">
+            <span>GLOW</span><span>IETY</span><span>·</span><span>NIRSAP</span>
+          </div>
+          <div class="cb-center">₹349</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll</span><div class="cue-line"></div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>NIRSAP BIOTECH</span><i>✦</i>
+    <span>TOWARDS A GREEN WORLD</span><i>✦</i>
+    <span>GLUTATHIONE · NIACINAMIDE</span><i>✦</i>
+    <span>ROSEMARY · BOTANICAL</span><i>✦</i>
+    <span>SULPHATE FREE · PARABEN FREE</span><i>✦</i>
+    <span>NIRSAP BIOTECH</span><i>✦</i>
+    <span>TOWARDS A GREEN WORLD</span><i>✦</i>
+    <span>GLUTATHIONE · NIACINAMIDE</span><i>✦</i>
+    <span>ROSEMARY · BOTANICAL</span><i>✦</i>
+    <span>SULPHATE FREE · PARABEN FREE</span><i>✦</i>
+  </div>
+</div>
+
+<!-- Collection -->
+<section id="collection" class="collection">
+  <div class="section-head">
+    <span class="eyebrow">THE COLLECTION</span>
+    <h2>Crafted Botanicals, <em>Bottled With Care</em></h2>
+    <p>Six signature formulations — each engineered in our Nirsap Biotech labs and finished with botanical artistry. All priced at <b>₹349</b>.</p>
+  </div>
+  <div class="products" id="products"></div>
+</section>
+
+<!-- Science -->
+<section id="science" class="science">
+  <div class="science-grid">
+    <div class="science-left reveal">
+      <span class="eyebrow">THE SCIENCE</span>
+      <h2>Biotech precision, <em>botanical soul</em>.</h2>
+      <p>At <b>Nirsap Biotech</b>, we fuse advanced cosmetic science with sustainably sourced botanicals. Every Glowiety formulation is dermatologically calibrated, free from sulphates and parabens, crafted in small batches to preserve potency.</p>
+      <ul class="science-list">
+        <li><span>01</span><div><b>Active Glutathione</b><p>Master antioxidant for clarity & glow.</p></div></li>
+        <li><span>02</span><div><b>Niacinamide B3</b><p>Refines pores, balances tone.</p></div></li>
+        <li><span>03</span><div><b>Rosemary Botanical</b><p>Cold-extracted active for stronger hair.</p></div></li>
+        <li><span>04</span><div><b>Green-World Pledge</b><p>Recyclable packaging, low footprint.</p></div></li>
+      </ul>
+    </div>
+    <div class="science-right">
+      <div class="orb">
+        <div class="orb-logo"><img src="assets/logo.png" alt="Glowiety"></div>
+        <div class="orb-ring r1"></div>
+        <div class="orb-ring r2"></div>
+        <div class="orb-ring r3"></div>
+        <div class="orb-dot d1"></div>
+        <div class="orb-dot d2"></div>
+        <div class="orb-dot d3"></div>
+        <div class="orb-dot d4"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO USE / RESULTS -->
+<section id="results" class="results">
+  <div class="section-head">
+    <span class="eyebrow">RITUAL · IN PRACTICE</span>
+    <h2>Beauty you can <em>see &amp; feel</em>.</h2>
+    <p>A simple, sensorial ritual — designed by Nirsap Biotech, loved by the Glowiety tribe.</p>
+  </div>
+
+  <div class="results-grid">
+    <div class="howto reveal">
+      <div class="howto-tag">HOW TO USE · ALOEVERA GEL</div>
+      <div class="howto-img"><img src="assets/howtouse-aloevera.png" alt="How to use Aloevera Gel"></div>
+    </div>
+    <div class="results-side">
+      <div class="result-card reveal">
+        <div class="rc-img"><img src="assets/m-conditioner.png" alt="Soft, silky hair result"></div>
+        <div class="rc-overlay">
+          <div class="rc-tag">VISIBLE RESULTS</div>
+          <h3>Soft, silky, salon-fresh hair.</h3>
+          <p>Pair the Rosemary Shampoo with our Nourishing Conditioner for visibly smoother, healthier locks.</p>
+        </div>
+      </div>
+      <div class="result-mini reveal">
+        <div class="rm-stat"><b>3</b><span>Step Daily Ritual</span></div>
+        <div class="rm-stat"><b>97%</b><span>Saw Visible Glow*</span></div>
+        <div class="rm-stat"><b>100%</b><span>Botanical Goodness</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ritual -->
+<section id="ritual" class="ritual">
+  <div class="section-head">
+    <span class="eyebrow">THE DAILY RITUAL</span>
+    <h2>A four-step path to <em>luminous beauty</em>.</h2>
+  </div>
+  <div class="ritual-steps">
+    <div class="rstep reveal"><span>01</span><h3>Cleanse</h3><p>Glutathione foaming face wash to purify, brighten and refine pores.</p></div>
+    <div class="rstep reveal"><span>02</span><h3>Exfoliate</h3><p>Coffee or natural loofah soap for renewed, glowing daily-fresh skin.</p></div>
+    <div class="rstep reveal"><span>03</span><h3>Nourish</h3><p>Rosemary shampoo + conditioner for stronger roots and silky hair.</p></div>
+    <div class="rstep reveal"><span>04</span><h3>Hydrate</h3><p>Pure Aloevera Gel to seal in moisture and reveal a soft, glowing finish.</p></div>
+  </div>
+</section>
+
+<!-- CTA Strip -->
+<section class="cta-strip">
+  <div class="cta-inner reveal">
+    <h2>Luxury, formulated by science. <em>Priced for everyday glow.</em></h2>
+    <p>Every Glowiety product is <b>₹349</b>. Pay online or choose <b>Cash on Delivery</b>.</p>
+    <a href="#collection" class="btn-primary"><span>Shop The Collection</span><i></i></a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+  <div class="footer-grid">
+    <div class="f-brand">
+      <div class="footer-logo"><img src="assets/logo.png" alt="Glowiety"></div>
+      <div class="footer-sub">NIRSAP BIOTECH</div>
+      <p>Towards a green world. Botanical luxury, engineered with biotech precision.</p>
+    </div>
+    <div class="f-col">
+      <h4>Explore</h4>
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#science">Science</a>
+      <a href="#ritual">Ritual</a>
+    </div>
+    <div class="f-col">
+      <h4>Care</h4>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">Ingredients</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div class="f-col">
+      <h4>Contact</h4>
+      <a href="/cdn-cgi/l/email-protection#64070516012403080b130d01101d4a0d0a"><span class="__cf_email__" data-cfemail="0a696b786f4a6d66657d636f7e73246364">[email&#160;protected]</span></a>
+      <a href="#">+91 · Nirsap Biotech</a>
+      <a href="#">Instagram · Glowiety</a>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>© 2026 Glowiety · Nirsap Biotech. All rights reserved.</span>
+    <span>Crafted with botanical care.</span>
+  </div>
+</footer>
+
+<!-- ===== Modals ===== -->
+<div class="modal" id="modal-form">
+  <div class="modal-back"></div>
+  <div class="modal-box">
+    <button class="modal-close" data-close>×</button>
+    <div class="modal-head">
+      <div class="modal-logo"><img src="assets/logo.png" alt=""></div>
+      <h3 id="form-title">Shipping Details</h3>
+      <p id="form-sub">Please fill in your shipping address to continue.</p>
+    </div>
+    <form id="shipping-form" autocomplete="on">
+      <div class="row">
+        <label>Full Name<input required name="name" type="text" placeholder="Your full name"></label>
+        <label>Phone<input required name="phone" type="tel" pattern="[0-9]{10}" placeholder="10-digit number"></label>
+      </div>
+      <label>Email<input required name="email" type="email" placeholder="you@email.com"></label>
+      <label>Address<textarea required name="address" rows="2" placeholder="House no, street, area"></textarea></label>
+      <div class="row">
+        <label>City<input required name="city" type="text" placeholder="City"></label>
+        <label>State<input required name="state" type="text" placeholder="State"></label>
+        <label>Pincode<input required name="pincode" type="text" pattern="[0-9]{6}" placeholder="6-digit"></label>
+      </div>
+      <div class="order-summary">
+        <div class="os-row"><span>Product</span><b id="os-product">—</b></div>
+        <div class="os-row"><span>Quantity</span><b>1</b></div>
+        <div class="os-row"><span>Price</span><b>₹349</b></div>
+        <div class="os-row os-delivery" id="os-delivery-row"><span>Delivery (COD)</span><b>₹100</b></div>
+        <div class="os-row os-total"><span>Total</span><b id="os-total">₹349</b></div>
+      </div>
+      <button type="submit" class="btn-primary form-submit"><span id="form-submit-label">Proceed to Pay</span><i></i></button>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="modal-success">
+  <div class="modal-back"></div>
+  <div class="modal-box small">
+    <button class="modal-close" data-close>×</button>
+    <div class="success-anim">
+      <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" /><path d="M20 33 L29 42 L46 24" /></svg>
+    </div>
+    <h3>Order Placed Successfully!</h3>
+    <p id="success-msg">Thank you for your order. We'll reach out shortly with tracking details.</p>
+    <button class="btn-primary" data-close><span>Continue Shopping</span><i></i></button>
+  </div>
+</div>
+
+<div class="modal" id="modal-pay-pending">
+  <div class="modal-back"></div>
+  <div class="modal-box small">
+    <button class="modal-close" data-close>×</button>
+    <div class="pay-anim"><div class="pa-spin"></div></div>
+    <h3>Complete Your Payment</h3>
+    <p>We've opened the secure payment window. Please complete the payment of <b>₹349</b>.</p>
+    <p class="muted">After successful payment, click below to confirm.</p>
+    <div class="pay-actions">
+      <button class="btn-primary" id="pay-confirm"><span>I've Paid · Confirm</span><i></i></button>
+      <a class="btn-ghost" id="pay-retry" href="#" target="_blank" rel="noopener">Reopen Payment</a>
+    </div>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="app.js"></script>
+</body>
+</html>
